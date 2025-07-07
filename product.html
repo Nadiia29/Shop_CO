@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/page.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/adaptive.css">
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <a href="/">back</a>
+    <div class="wrapper">
+        <header class="header__block">
+            <div class="header__discount">
+                <div class="header__discount-text">
+                    Sign up and get 20% off to your first order.
+                    <a href="#" class="header__discount-link">
+                        Sign Up Now
+                    </a>
+                </div>
+                <a href="#" class="header__cross">×</a>
+            </div>
+
+            <div class="header__container">
+                <div class="header__content content-header">
+                    <a href="#" class="content-header__logo">
+                        SHOP.CO
+                    </a>
+
+                    <nav class="content-header__menu">
+                        <ul class="content-header__list">
+                            <li class="content-header__item">
+                                <a href="">Shop</a>
+                            </li>
+
+                            <li class="content-header__item">
+                                <a href="">On Sale</a>
+                            </li>
+
+                            <li class="content-header__item">
+                                <a href="">New Arrivals</a>
+                            </li>
+
+                            <li class="content-header__item">
+                                <a href="">Brands</a>
+                            </li>
+                        </ul>
+                    </nav>
+                        
+                    <input class="content-header__search" placeholder="Search for products..." name="somename" type="text">
+
+                    <div class="content-header__account">
+                        <a href="#" class="content-header__basket">
+                            <img src="./img/header_account/basket.svg" alt="">
+                        </a>
+                        <a href="#" class="content-header__avatar">
+                            <img src="./img/header_account/avatar.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="page">
+
+            <section class="product__container">
+                <div class="products__box">
+                    <div class="products__images">
+                        <div class="product__img--1">
+                            <div class="products__img--1">
+                                <img src="./img/Img Products/product/image 1.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="products__img--2">
+                            <a href="" class="products__img">
+                                <img src="./img/Img Products/product/image 2.jpg" alt="">
+                            </a href="">
+    
+                            <a href="" class="products__img">
+                                <img src="./img/Img Products/product/image 3.jpg" alt="">
+                            </a href="">
+    
+                            <a href=""class="products__img">
+                                <img src="./img/Img Products/product/image 4.jpg" alt="">
+                            </a href="">
+
+                        </div>
+                    </div>
+
+                    <div class="products__description description-products">
+                        <div class="description-products__box">
+                            <h4 class="description-products__title">
+                                ONE LIFE GRAPHIC T-SHIRT
+                            </h4>
+
+                            <div class="cards__raiting">
+                                <div class="rating-container">
+                                    <div class="rating">
+                                      <span class="full-star">★</span>
+                                      <span class="full-star">★</span>
+                                      <span class="full-star">★</span>
+                                      <span class="full-star">★</span>
+                                      <span class="half-star">☆</span>
+                                    </div>
+    
+                                    <div class="rating-number">4.5/5</div>
+                                </div>
+                            </div>
+
+                            <div class="description-products__price-tag">
+                                <div class="description-products__price_1">$212</div>
+                                <div class="description-products__preprice">$242</div>
+                                <div class="description-products__rebate">-20%</div>
+                            </div>
+
+                            <div class="description-products__text">
+                                This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.
+                            </div>
+
+                            <div class="description-products__divider divider__container"></div>
+
+                            <form action="#" class="colors__list">
+                                <h3 class="colors__title">
+                                    Select Colors
+                                </h3>
+
+                                <div class="colors">
+                                    <input type="radio" id="brown" class="colors__radio"  name="color" checked>
+                                    <label for="brown" class="color brown"></label>
+
+                                    <input type="radio" id="green" class="colors__radio"  name="color">
+                                    <label class="color green" for="green"></label>
+
+                                    <input type="radio" id="blue" class="colors__radio"  name="color">
+                                    <label class="color blue" for="blue"></label>
+                                </div>
+                            </form>
+
+                            <div class="description-products__divider divider__container"></div>
+
+                            <form action="#" class="size__list">
+                                <h3 class="size__title">
+                                    Choose Size
+                                </h3>
+
+                                <div class="sizes">
+                                    <input name="size" type="radio" class="size__input" id="small">
+                                    <label class="size" for="small">Small</label>
+    
+                                    <input name="size" type="radio" class="size__input" id="medium" checked>
+                                    <label class="size" for="medium">Medium</label>
+    
+                                    <input name="size" type="radio" class="size__input" id="large">
+                                    <label class="size" for="large">Large</label>
+    
+                                    <input name="size" type="radio" class="size__input" id="x-large">
+                                    <label class="size" for="x-large">X-Large</label>
+                                </div>
+
+                                <div class="description-products__divider divider__container"></div>
+                                
+                                <div class="amount__content">
+                                    <label class="amount">
+                                        <button type="button" class="amount__btn amount__btn--left"></button>
+                                        <input class="amount__input" type="text" value="1">
+                                        <button type="button" class="amount__btn amount__btn--right"></button>
+                                    </label>
+    
+                                    <div class="add">
+                                        <button class="add__btn">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="details">
+                <div class="details__container">
+                    <div class="details__box">
+                        <div class="details__name">Product Details</div>
+
+                        <div class="details__name details__name--active">Rating & Reviews</div>
+
+                        <div class="details__name">FAQs</div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section__divider divider__container"></div>
+
+            <section class="reviews">
+                <div class="reviews__container">
+                    <div class="reviews__content">
+                        <h4 class="reviews__title">
+                            All Reviews
+                            <p class="reviews__subtitle">(451)</p>
+                        </h4>
+
+                        <div class="reviews__buttons buttons-menu">
+                            <button class="buttons-menu__btn1">
+                                <img src="./img/Img Products/reviews/btn_1.svg" alt="">
+                            </button>
+
+                            <button class="buttons-menu__btn2">Latest</button>
+
+                            <button class="buttons-menu__btn3">Write a Review</button>
+                        </div>
+                    </div>
+
+                    <div class="reviews__box">
+                        <div class="reviews__comments">
+                            <div class="reviews__raiting">
+                                    <div class="rating-container">
+                                        <div class="rating">
+                                            <span class="full-star">★</span>
+                                            <span class="full-star">★</span>
+                                            <span class="full-star">★</span>
+                                            <span class="full-star">★</span>
+                                            <span class="half-star">☆</span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <div class="reviews__names">
+                                <div class="reviews__name">
+                                    Samantha D.
+                                </div>
+
+                                <div class="reviews__valid">
+                                    <img src="./img/customers/cheched.svg" alt="customers">
+                                </div>
+                            </div>
+
+                            <div class="reviews__text">
+                               <p>
+                                "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."
+                               </p>
+
+                               <p>
+                                Posted on August 14, 2023
+                               </p>
+                            </div>
+                        </div>
+
+                        <div class="reviews__comments">
+                            <div class="reviews__raiting">
+                                    <div class="rating-container">
+                                        <div class="rating">
+                                            <span class="full-star">★</span>
+                                            <span class="full-star">★</span>
+                                            <span class="full-star">★</span>
+                                            <span class="full-star">★</span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <div class="reviews__names">
+                                <div class="reviews__name">
+                                    Alex M.
+                                </div>
+
+                                <div class="reviews__valid">
+                                    <img src="./img/customers/cheched.svg" alt="customers">
+                                </div>
+                            </div>
+
+                            <div class="reviews__text">
+                               <p>
+                                "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me."
+                               </p>
+
+                               <p>
+                                Posted on August 15, 2023
+                               </p>
+                            </div>
+                        </div>
+
+                        <div class="reviews__comments">
+                            <div class="reviews__raiting">
+                                    <div class="rating-container">
+                                        <div class="rating">
+                                            <span class="full-star">★</span>
+                                            <span class="full-star">★</span>
+                                            <span class="full-star">★</span>
+                                            <span class="half-star">☆</span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <div class="reviews__names">
+                                <div class="reviews__name">
+                                    Ethan R.
+                                </div>
+
+                                <div class="reviews__valid">
+                                    <img src="./img/customers/cheched.svg" alt="customers">
+                                </div>
+                            </div>
+
+                            <div class="reviews__text">
+                               <p>
+                                "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt."
+                               </p>
+
+                               <p>
+                                Posted on August 16, 2023
+                               </p>
+                            </div>
+                        </div>
+
+                        <div class="reviews__comments">
+                            <div class="reviews__raiting">
+                                    <div class="rating-container">
+                                        <div class="rating">
+                                            <span class="full-star">★</span>
+                                            <span class="full-star">★</span>
+                                            <span class="full-star">★</span>
+                                            <span class="full-star">★</span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <div class="reviews__names">
+                                <div class="reviews__name">
+                                    Olivia P.
+                                </div>
+
+                                <div class="reviews__valid">
+                                    <img src="./img/customers/cheched.svg" alt="customers">
+                                </div>
+                            </div>
+
+                            <div class="reviews__text">
+                               <p>
+                                "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out."
+                               </p>
+
+                               <p>
+                                Posted on August 17, 2023
+                               </p>
+                            </div>
+                        </div>
+
+                        <div class="reviews__comments">
+                            <div class="reviews__raiting">
+                                    <div class="rating-container">
+                                        <div class="rating">
+                                            <span class="full-star">★</span>
+                                            <span class="full-star">★</span>
+                                            <span class="full-star">★</span>
+                                            <span class="full-star">★</span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <div class="reviews__names">
+                                <div class="reviews__name">
+                                    Liam K.
+                                </div>
+
+                                <div class="reviews__valid">
+                                    <img src="./img/customers/cheched.svg" alt="customers">
+                                </div>
+                            </div>
+
+                            <div class="reviews__text">
+                               <p>
+                                "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt."
+                               </p>
+
+                               <p>
+                                Posted on August 16, 2023
+                               </p>
+                            </div>
+                        </div>
+
+                        <div class="reviews__comments">
+                            <div class="reviews__raiting">
+                                    <div class="rating-container">
+                                        <div class="rating">
+                                            <span class="full-star">★</span>
+                                            <span class="full-star">★</span>
+                                            <span class="full-star">★</span>
+                                            <span class="full-star">★</span>
+                                            <span class="half-star">☆</span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <div class="reviews__names">
+                                <div class="reviews__name">
+                                    Ava H.
+                                </div>
+
+                                <div class="reviews__valid">
+                                    <img src="./img/customers/cheched.svg" alt="customers">
+                                </div>
+                            </div>
+
+                            <div class="reviews__text">
+                               <p>
+                                "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter."
+                               </p>
+
+                               <p>
+                                Posted on August 19, 2023
+                               </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="cards__button">
+                <button class="cards__btn">Load More Reviews</button>
+            </div>
+
+            <section class="cards">
+                <div class="cards__container">
+                    <h2 class="products__title title">
+                        YOU MIGHT ALSO LIKE
+                    </h2>
+
+                    <div class="cards__box">
+                        <div class="cards__content">
+                            <div class="cards__items">
+                                <img src="./img/Img Products/Might/might_1.jpg" alt="image">
+                            </div>
+
+                            <div class="cards__details">
+                                <div class="cards__discribe">
+                                    Polo with Contrast Trims
+                                </div>
+
+                                <div class="cards__raiting">
+                                    <div class="rating-container">
+                                        <div class="rating">
+                                          <span class="full-star">★</span>
+                                          <span class="full-star">★</span>
+                                          <span class="full-star">★</span>
+                                          <span class="full-star">★</span>
+                                        </div>
+        
+                                        <div class="rating-number">4.0/5</div>
+                                    </div>
+                                </div>
+
+                                <div class="cards__price-tag">
+                                    <div class="card__price_1">$212</div>
+                                    <div class="card__preprice">$242</div>
+                                    <div class="card__rebate">-20%</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cards__content">
+                            <div class="cards__items">
+                                <img src="./img/Img Products/Might/might_2.jpg" alt="image">
+                            </div>
+    
+                            <div class="cards__details">
+                                <div class="cards__discribe">
+                                    Gradient Graphic T-shirt
+                                </div>
+    
+                                <div class="cards__raiting">
+                                    <div class="rating-container">
+                                        <div class="rating">
+                                          <span class="full-star">★</span>
+                                          <span class="full-star">★</span>
+                                          <span class="full-star">★</span>
+                                          <span class="half-star">☆</span>
+                                        </div>
+        
+                                        <div class="rating-number">3.5/5</div>
+                                    </div>
+                                </div>
+    
+                                <div class="cards__price">$145</div>
+                            </div>
+                        </div>
+
+                        <div class="cards__content">
+                            <div class="cards__items">
+                                <img src="./img/Img Products/Might/might_3.jpg" alt="image">
+                            </div>
+    
+                            <div class="cards__details">
+                                <div class="cards__discribe">
+                                    Polo with Tipping Details
+                                </div>
+    
+                                <div class="cards__raiting">
+                                    <div class="rating-container">
+                                        <div class="rating">
+                                          <span class="full-star">★</span>
+                                          <span class="full-star">★</span>
+                                          <span class="full-star">★</span>
+                                          <span class="full-star">★</span>
+                                          <span class="half-star">☆</span>
+                                        </div>
+        
+                                        <div class="rating-number">4.5/5</div>
+                                    </div>
+                                </div>
+    
+                                <div class="cards__price">$180</div>
+                            </div>
+                        </div>
+
+                        <div class="cards__content">
+                            <div class="cards__items">
+                                <img src="./img/Img Products/Might/might_4.jpg" alt="image">
+                            </div>
+
+                            <div class="cards__details">
+                                <div class="cards__discribe">
+                                    Black Striped T-shirt
+                                </div>
+
+                                <div class="cards__raiting">
+                                    <div class="rating-container">
+                                        <div class="rating">
+                                          <span class="full-star">★</span>
+                                          <span class="full-star">★</span>
+                                          <span class="full-star">★</span>
+                                          <span class="full-star">★</span>
+                                          <span class="full-star">★</span>
+                                        </div>
+        
+                                        <div class="rating-number">5.0/5</div>
+                                    </div>
+                                </div>
+
+                                <div class="cards__price-tag">
+                                    <div class="card__price_1">$120</div>
+                                    <div class="card__preprice">$150</div>
+                                    <div class="card__rebate">-30%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="subscribing subscribing__container">
+                <div class="subscribing__inner">
+                    <h2 class="subscribing__title">STAY UPTO DATE ABOUT <br> OUR LATEST OFFERS</h2>
+                    <form class="subscribing__form">
+                        <input class="subscribing__input" type="email" name="subscribe" placeholder="Enter your email address">
+                        <button class="subscribing__btn">Subscribe to Newsletter</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container footer-top">
+                <div class="footer-top__inner">
+                    <div class="footer__info">
+                        <a href="" class="footer__logo">
+                            SHOP.CO
+                        </a>
+    
+                        <div class="footer__text">
+                            We have clothes that suits your style and which you’re proud to wear. From women to men.
+                        </div>
+    
+                        <div class="footer__icons">
+                            <a href="#" class="footer__icon">
+                                <img src="./img/footer/icons_social/1.svg" alt="image">
+                            </a>
+    
+                            <a href="#" class="footer__icon">
+                                <img src="./img/footer/icons_social/2.svg" alt="image">
+                            </a>
+    
+                            <a href="#" class="footer__icon">
+                                <img src="./img/footer/icons_social/3.svg" alt="image">
+                            </a>
+    
+                            <a href="#" class="footer__icon">
+                                <img src="./img/footer/icons_social/4.svg" alt="image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__menu">
+                        <div class="footer__name">Company</div>
+    
+                        <div class="footer__discribe">
+                            <p>About</p>
+                            <p>Features</p>
+                            <p>Works</p>
+                            <p>Career</p>
+                        </div>
+                    </div>
+    
+                    <div class="footer__menu">
+                        <div class="footer__name">Help</div>
+    
+                        <div class="footer__discribe">
+                            <p>Customer Support</p>
+                            <p>Delivery Details</p>
+                            <p>Terms & Conditions</p>
+                            <p>Privacy Policy</p>
+                        </div>
+                    </div>
+    
+                    <div class="footer__menu">
+                        <div class="footer__name">FAQ</div>
+    
+                        <div class="footer__discribe">
+                            <p>Account</p>
+                            <p>Manage Deliveries</p>
+                            <p>Orders</p>
+                            <p>Payments</p>
+                        </div>
+                    </div>
+    
+                    <div class="footer__menu">
+                        <div class="footer__name">Resources</div>
+    
+                        <div class="footer__discribe">
+                            <p>Free eBooks</p>
+                            <p>Development Tutorial</p>
+                            <p>How to - Blog</p>
+                            <p>Youtube Playlist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__divider divider__container"></div>
+
+            <div class="footer__container footer-bottom">
+                <div class="footer-bottom__box">
+                    <div class="footer-bottom__rigts">
+                        Shop.co © 2000-2023, All Rights Reserved
+                    </div>
+
+                    <div class="footer-bottom__pay">
+                        <a href="">
+                            <img src="./img/footer/logo_system-cards/img_1.svg" alt="">
+                        </a>
+
+                        <a href="">
+                            <img src="./img/footer/logo_system-cards/img_2.svg" alt="">
+                        </a>
+
+                        <a href="">
+                            <img src="./img/footer/logo_system-cards/img_3.svg" alt="">
+                        </a>
+
+                        <a href="">
+                            <img src="./img/footer/logo_system-cards/img_4.svg" alt="">
+                        </a>
+
+                        <a href="">
+                            <img src="./img/footer/logo_system-cards/img_5.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+.header__discount {
+	display: flex;
+	width: 100%;
+	height: 40px;
+	background: #000;
+}
+
+.header__discount-text {
+	padding: 15px 0px;
+	flex-basis: 95%;
+	text-align: center;
+	height: 100%;
+	font-weight: 400;
+	font-size: 12px;
+	color: #fff;
+}
+
+.header__discount-link {
+	text-decoration: underline;
+}
+
+.header__cross {
+	flex-basis: 5%;
+	padding: 10px 0px;
+	color: #fff;
+}
+
+.header__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 30px;
+	height: 100px;
+}
+
+.content-header__logo {
+	font-family: 'Paytone One', sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 32px;
+}
+
+.content-header__menu {
+	display: flex;
+	gap: 20px;
+	font-size: 16px;
+}
+
+.content-header__list {
+	display: flex;
+	justify-content: space-between;
+	width: 320px;
+}
+
+.content-header__search {
+	display: flex;
+	max-width: 550px;
+	min-width: 220px;
+	width: 100%;
+	height: 50px;
+	padding: 0px 20px 0px 40px;
+	border: 1px solid #f0f0f0;
+	border-radius: 25px;
+	background: #f0f0f0 url(/img/search.svg) 10px center no-repeat;
+}
+
+.content-header__search:focus {
+	border: 1px solid gray;
+	outline: none;
+}
+
+.content-header__account {
+	display: flex;
+	gap: 15px;
+	padding-top: 10px;
+}
+
+.content-header__basket,
+.content-header__avatar {
+	width: 35px;
+	height: 40px;
+}
