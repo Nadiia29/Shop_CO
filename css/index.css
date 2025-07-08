@@ -126,21 +126,46 @@
 }
 
 /* raiting ---------------------- */
+
 .rating-container {
 	display: flex;
 	align-items: center;
+	gap: 8px;
+	font-size: 20px;
 }
 
-.full-star {
-	font-size: 1.2rem;
+.rating {
+	display: flex;
+}
+
+.full-star,
+.half-star,
+.empty-star {
 	color: gold;
-	margin-right: 5px;
+}
+
+.rating span {
+	cursor: pointer;
+	transition: color 0.2s ease;
+}
+
+.rating span:not(:last-child):hover,
+.rating span:not(:last-child):hover ~ span:not(:last-child) {
+	color: orange;
+}
+
+.rating span:last-child {
+	color: lightgray !important;
+	pointer-events: none;
+}
+
+.empty-star {
+	color: lightgray;
 }
 
 .half-star {
 	position: relative;
-	display: inline-block;
-	color: rgb(248, 246, 246);
+	color: lightgray;
 }
 
 .half-star::before {
@@ -148,19 +173,13 @@
 	position: absolute;
 	left: 0;
 	width: 50%;
-	color: gold;
 	overflow: hidden;
-}
-
-.full-star:hover,
-.full-star:hover ~ span {
-	color: lightgray;
+	color: gold;
 }
 
 .rating-number {
-	font-size: 0.8rem;
+	font-size: 14px;
 	color: #333;
-	padding-left: 10px;
 }
 
 /* Products -------------------------------- */
