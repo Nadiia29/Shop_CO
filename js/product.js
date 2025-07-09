@@ -29,6 +29,8 @@ const discount = document.querySelector('#discount');
 const productImg = document.querySelector('#productImg');
 const description = document.querySelector('#desc');
 const ratingContainer = document.querySelector('#rating');
+const colorsContainer = document.querySelector('#colorsContainer');
+const sizesContainer = document.querySelector('#sizesContainer');
 
 const imgEl = `<img src="${product.img}" alt="${product.name}" />`;
 const fullPriceEl = product.fullPrice
@@ -58,6 +60,43 @@ const renderStars = (rating) => {
 	return starsHTML;
 };
 
+const renderColors = (colors) => {
+	return colors
+		.map((color, index) => {
+			const isChecked = index === 0 ? 'checked' : '';
+			return `
+				<input
+					type="radio"
+					id="${color}"
+					class="colors__radio"
+					name="color"
+					${isChecked}
+				/>
+				<label for="${color}" class="color ${color}"></label>
+			`;
+		})
+		.join('');
+};
+
+const renderSizes = (sizes) => {
+	return sizes
+		.map(
+			(size, index) => `
+			<input
+				type="radio"
+				id="${size.toLowerCase().replace(/\s+/g, '-')}"
+				class="size__input"
+				name="size"
+				${index === 1 ? 'checked' : ''}
+			/>
+			<label class="size" for="${size.toLowerCase().replace(/\s+/g, '-')}">${size}</label>
+		`,
+		)
+		.join('');
+};
+
+sizesContainer.innerHTML = renderSizes(product.sizes);
+colorsContainer.innerHTML = renderColors(product.colors);
 ratingContainer.innerHTML = `
 	<div class="rating">${renderStars(product.rating)}</div>
 	<div class="rating-number">${product.rating}/5</div>

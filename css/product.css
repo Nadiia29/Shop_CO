@@ -90,35 +90,23 @@
 	margin-top: 16px;
 }
 
-.colors {
-	display: flex;
-	gap: 16px;
-}
-
 .color {
 	width: 37px;
 	height: 37px;
 	display: inline-block;
 	position: relative;
-	border: 1px solid rgb(205, 203, 203);
-	border-radius: 50px;
+	border: 1px solid #cdc9c9;
+	border-radius: 50%;
 	cursor: pointer;
+	transition: opacity 0.2s ease;
+}
+
+.color:hover {
+	opacity: 0.9;
 }
 
 .colors__radio {
 	display: none;
-}
-
-.brown {
-	background: #4f4631;
-}
-
-.green {
-	background: #314f4a;
-}
-
-.blue {
-	background: #31344f;
 }
 
 .color::after {
@@ -138,8 +126,30 @@
 	display: block;
 }
 
-.color:hover {
-	opacity: 0.9;
+/* Кольори */
+.color.black {
+	background: #000;
+}
+.color.green {
+	background: #314f4a;
+}
+.color.blue {
+	background: #31344f;
+}
+.color.maroon {
+	background: #800000;
+}
+.color.yellow {
+	background: #ffcc00;
+}
+.color.brown {
+	background: #4f4631;
+}
+.color.purple {
+	background: #6a0dad;
+}
+.color.orange {
+	background: rgb(235, 120, 4);
 }
 
 /*  Size ---------------------------------------- */
