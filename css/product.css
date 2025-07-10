@@ -474,16 +474,17 @@
 	padding: 10px 0;
 }
 
-.cards__price {
+.cards__price,
+.card__price {
 	padding: 10px 0;
 }
 
-.cards__preprice {
+.card__preprice {
 	color: rgb(148, 147, 147);
 	text-decoration: line-through;
 }
 
-.cards__rebate {
+.card__rebate {
 	color: red;
 	font-size: 10px;
 	border: 1px solid rgb(248, 182, 182);
